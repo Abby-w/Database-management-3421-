@@ -1,0 +1,87 @@
+
+
+
+
+Q1: Find all attributes/fields of each 18-year-old sailor whose rating is greater than 9.
+
+Select *
+From sailors s
+Where s.age=18 
+And s.rating > 9 ;
+
+
+Q2: Find the first reservation (i.e., lowest rdate) for each sailor with ids less than 5.
+
+SELECT r.sid,
+       MIN(r.rdate)
+FROM reserve r
+WHERE r.sid<5 
+GROUP BY r.sid
+
+Q3: Find the number of reservations by 18-year-old sailors.
+
+Select count(*)
+From reserve r, sailors s
+Where r.sid=s.sid 
+And s.age=18;
+
+
+Q4: Find the sailor name, age, and boat name for all reservations on 2019-01-23 made by sailors who are 40 years old or older. Show the results sorted by age.
+
+Select s.name, s.age, b.name
+From sailors s, boats b, reserve r
+Where r.sid=s.sid
+And b.bid=r.bid 
+And r.rdate="2019-01-23"
+And s.age>=40
+Order by s.age;
+
+Q5: Find all attributes/fields of boats that are "pumpkin" color and have a ratingNeeded that is the maximum of all ratingNeeded for all boats.
+
+SELECT *
+FROM boats b
+WHERE b.bcolor="Pumpkin" 
+And b.ratingNeeded=10
+
+
+Q6: Find the name, rating, ratingNeeded, and bid of all reservations by 18-year-old sailors that have reserved a boat for which there rating is less than the rating needed. Sort the results by sid.
+
+Select s.name, s.rating, b.ratingNeeded, b.bid
+From sailors s, reserve r, boats b
+Where s.sid=r.sid
+And r.bid=b.bid
+And s.age=18
+And b.ratingNeeded>s.rating;
+
+Q7: For each 18-year-old sailor who has reserved one or more boats where the ratingNeeded is > than their rating, return sid of each such sailor and the number of these reservations. Order by sid.
+Select s.sid, count(s.sid)
+From sailors s, reserve r, boats b
+Where s.sid=r.sid
+And b.bid=r.bid
+And s.age=18
+And b.ratingNeeded>s.rating
+Group by s.sid
+Having count(*)>=1
+Order by s.sid
+
+Q8: Find average rating for each age group of sailors who are 31...39 years old, inclusive.
+
+SELECT s.age,
+       AVG(s.rating)
+FROM sailors s
+WHERE s.age>30
+And s.age<40
+GROUP BY s.age
+
+Q9: Find average rating for each age group of sailors who are 31...39 years old, but only include groups that have 30 or more sailors of that age.
+
+SELECT s.age,
+       AVG(s.rating)
+FROM sailors s
+WHERE s.age>30
+And s.age<40
+GROUP BY s.age
+Having count(*)>30
+
+
+

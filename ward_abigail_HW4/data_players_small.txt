@@ -1,0 +1,208 @@
+1,Cheryl Morse,1,goalie,34,0,1,1,Manchester United
+2,Juan Douglas,1,defender,35,2,2,2,Porto
+3,Sheryl Smith,1,defender,39,2,1,2,Midtyjlland
+4,Daniel Gonzalez,1,defender,40,3,1,0,Dynamo Kiev
+5,Jasmin Martinez,1,defender,31,3,0,2,Inter Milan
+6,Amy Avery,1,midfielder,24,3,2,0,Zenit
+7,Mitchell Mclaughlin,1,midfielder,31,2,2,2,PSG
+8,Amanda Gonzalez,1,midfielder,20,0,1,1,Manchester United
+9,James Hale,1,midfielder,39,2,1,0,RB Leipzig
+10,Jeff Murphy,1,forward,18,3,2,2,Dynamo Kiev
+11,Kim Cross,1,forward,27,4,1,1,Sevilla
+12,James Murray,1,goalie,29,0,1,1,Marseille
+13,Daniel Rogers,1,defender,34,2,2,1,Borussia Monchengladbach
+14,Jeffrey Morrison,1,defender,26,2,0,1,Borussia Dortmund
+15,Jeremy Walters,1,defender,23,0,1,0,Lokomotiv Moscow
+16,Anthony Hernandez,1,defender,33,4,0,0,Midtyjlland
+17,Nichole Kelly,1,midfielder,30,2,2,0,Krasnodar
+18,Andrew Watts,1,midfielder,26,1,1,0,Krasnodar
+19,Matthew Payne,1,midfielder,21,0,1,2,Ferencvaros
+20,Rebecca Barrett,1,midfielder,18,3,2,0,Shakhtar Donetsk
+21,Dr. Jennifer Logan,1,forward,39,1,0,2,Lazio
+22,Alyssa Bailey,1,forward,19,1,0,2,Krasnodar
+23,Michael Evans,2,goalie,34,0,0,2,Chelsea
+24,Paul Jensen,2,defender,28,4,0,0,Juventus
+25,Bethany Nguyen,2,defender,20,0,1,0,Sevilla
+26,Mckenzie Torres,2,defender,30,2,2,2,Ferencvaros
+27,Leslie Gonzales,2,defender,31,0,2,0,Club Brugge
+28,Samuel Lopez,2,midfielder,26,0,0,1,Marseille
+29,Roberto Wood,2,midfielder,21,3,1,2,Atletico Madrid
+30,Brian Pena,2,midfielder,37,3,0,2,Krasnodar
+31,Miss Rachel Haas DDS,2,midfielder,38,0,1,0,Atletico Madrid
+32,Jennifer Miller,2,forward,27,4,1,1,Rennes
+33,Kathleen Phillips,2,forward,30,3,2,2,Ajax
+34,Eric Rice,2,goalie,24,0,2,0,Ferencvaros
+35,Joseph Wells,2,defender,35,1,2,0,Borussia Monchengladbach
+36,Kristopher Brown,2,defender,19,1,1,2,Manchester United
+37,Pamela Gallagher,2,defender,27,1,0,1,Liverpool
+38,Linda Davis,2,defender,17,1,0,0,Istanbul Basaksehir
+39,Cassandra Blair,2,midfielder,38,0,2,1,Atletico Madrid
+40,Michael Roberts,2,midfielder,22,0,1,1,Liverpool
+41,Amanda Carpenter,2,midfielder,36,4,0,2,Lazio
+42,Xavier Colon,2,midfielder,18,2,1,0,Bayern Munich
+43,Brianna Shelton,2,forward,40,1,1,2,Ajax
+44,Chad Vincent,2,forward,28,0,0,2,Lokomotiv Moscow
+45,Jon Romero,3,goalie,30,0,0,1,Borussia Monchengladbach
+46,Andrea Taylor,3,defender,27,0,0,0,Rennes
+47,Hunter Gay,3,defender,24,4,1,0,Barcelona
+48,Frances Garcia,3,defender,25,3,1,0,Red Bull Salzburg
+49,Anna Franklin,3,defender,29,4,2,0,Borussia Dortmund
+50,Stephanie Allison,3,midfielder,34,3,0,1,Chelsea
+51,Mario Harris,3,midfielder,37,2,2,0,Krasnodar
+52,Aaron Faulkner,3,midfielder,34,0,2,2,Ajax
+53,Alice Martin,3,midfielder,25,1,1,0,Real Madrid
+54,Andrew Fisher,3,forward,38,0,2,2,Rennes
+55,Stephanie Cole,3,forward,32,1,1,2,Marseille
+56,Jeremy James,3,goalie,19,0,2,1,Zenit
+57,Dr. Kimberly Roberts DDS,3,defender,35,3,2,0,Istanbul Basaksehir
+58,Jason Sutton,3,defender,24,4,2,1,Inter Milan
+59,Michelle Walker,3,defender,30,1,1,1,Atletico Madrid
+60,Cody Carpenter,3,defender,23,2,0,0,Real Madrid
+61,Michael Keller,3,midfielder,38,0,1,0,Rennes
+62,Stacy Wright,3,midfielder,22,1,0,2,RB Leipzig
+63,Robyn Mann,3,midfielder,33,4,1,0,Inter Milan
+64,Kelly Ramos,3,midfielder,32,1,2,2,Sevilla
+65,Anthony Jackson,3,forward,38,2,1,1,Borussia Monchengladbach
+66,Matthew Lara,3,forward,38,1,1,2,Atalanta
+67,Olivia Brewer,4,goalie,21,0,0,1,Chelsea
+68,Nancy Patel,4,defender,32,2,2,2,Liverpool
+69,Johnny Petersen,4,defender,23,2,1,2,Borussia Monchengladbach
+70,Antonio Robbins,4,defender,30,3,0,0,Real Madrid
+71,Jennifer Gamble,4,defender,34,3,0,1,Ferencvaros
+72,Amy Alexander,4,midfielder,24,0,1,1,Manchester City
+73,Sandra Morris,4,midfielder,31,0,0,2,Chelsea
+74,Jeremiah Garcia,4,midfielder,40,0,1,2,Olympiacos
+75,Michelle Hudson,4,midfielder,39,2,1,2,Borussia Dortmund
+76,Samuel Whitney,4,forward,22,1,1,1,Real Madrid
+77,Deanna Brown,4,forward,31,4,2,1,PSG
+78,Dominique Oconnor,4,goalie,17,0,2,1,Istanbul Basaksehir
+79,Kristen Campbell,4,defender,39,4,2,0,Lazio
+80,Melissa Roberts,4,defender,31,0,0,2,RB Leipzig
+81,John Gutierrez,4,defender,39,3,2,0,Juventus
+82,Jackson Jones,4,defender,32,1,2,0,Lazio
+83,Mark Jones,4,midfielder,25,0,0,1,Zenit
+84,Carmen Johnson,4,midfielder,31,1,2,2,Marseille
+85,Kenneth Hudson,4,midfielder,38,4,2,2,Sevilla
+86,Sean Kirk,4,midfielder,28,4,0,1,Istanbul Basaksehir
+87,Rachel Scott,4,forward,21,1,2,0,Real Madrid
+88,Steven Morgan,4,forward,23,0,2,0,Marseille
+89,Ian Francis,5,goalie,27,0,0,1,Juventus
+90,William Rivas,5,defender,36,1,0,2,Ferencvaros
+91,James Stone,5,defender,25,3,2,1,Red Bull Salzburg
+92,Melanie Mccall,5,defender,39,3,0,1,Shakhtar Donetsk
+93,Daniel White,5,defender,35,1,0,0,Atalanta
+94,Alexander Benson,5,midfielder,34,3,2,2,RB Leipzig
+95,Patricia Noble,5,midfielder,32,4,2,0,Barcelona
+96,Zachary Lane,5,midfielder,36,4,1,2,RB Leipzig
+97,Maria Williams,5,midfielder,22,2,2,2,Marseille
+98,Jessica Mayo,5,forward,24,4,2,2,Club Brugge
+99,David Thomas,5,forward,30,0,2,0,Manchester United
+100,Steven Zhang,5,goalie,17,0,2,0,Ferencvaros
+101,Chad Clark,5,defender,33,3,2,1,Ferencvaros
+102,Sara Booth,5,defender,28,2,1,0,PSG
+103,Michael Brown,5,defender,31,3,1,1,Manchester City
+104,Courtney Jones,5,defender,40,2,2,0,Sevilla
+105,Joseph Collins,5,midfielder,31,1,0,2,Dynamo Kiev
+106,Diana Key,5,midfielder,35,0,1,0,Istanbul Basaksehir
+107,Catherine Torres MD,5,midfielder,23,0,0,2,Chelsea
+108,Kyle Todd Jr.,5,midfielder,35,1,0,2,Barcelona
+109,Karen Hernandez,5,forward,40,1,1,1,Krasnodar
+110,Erica Williams,5,forward,27,2,0,0,Borussia Dortmund
+111,Richard Fisher,6,goalie,24,0,0,0,Atalanta
+112,Daniel Yates,6,defender,20,1,1,0,Lokomotiv Moscow
+113,Alexandra Flores,6,defender,40,1,1,2,Sevilla
+114,Richard Anderson MD,6,defender,24,3,0,0,Atalanta
+115,Stephen Richardson,6,defender,27,2,0,2,Lazio
+116,Haley Castro,6,midfielder,27,0,1,0,Atalanta
+117,Travis Stephens,6,midfielder,22,2,2,1,Dynamo Kiev
+118,John Warren,6,midfielder,25,2,1,1,Dynamo Kiev
+119,Amy Miller,6,midfielder,28,3,0,2,Dynamo Kiev
+120,Riley Sims,6,forward,35,3,2,2,Olympiacos
+121,Joshua May,6,forward,40,3,2,1,Manchester United
+122,Zachary Martin,6,goalie,20,0,2,0,Chelsea
+123,David Bush,6,defender,22,2,1,0,Zenit
+124,Anthony Johnson,6,defender,38,2,0,1,Borussia Dortmund
+125,Jennifer Martinez,6,defender,17,2,0,0,Rennes
+126,John Perez,6,defender,20,4,0,1,Juventus
+127,Ariel Kaiser,6,midfielder,35,4,0,1,Club Brugge
+128,Jamie Glass,6,midfielder,31,4,0,0,Olympiacos
+129,Brian Gonzales,6,midfielder,37,3,0,2,Club Brugge
+130,Tonya Smith,6,midfielder,30,3,1,0,Borussia Dortmund
+131,Cheryl Hamilton,6,forward,20,2,0,0,Juventus
+132,Ashley Jones,6,forward,25,2,2,1,Ferencvaros
+133,Allison Stout MD,7,goalie,38,0,2,0,Inter Milan
+134,Jeremy Morrison,7,defender,35,4,2,1,Borussia Dortmund
+135,Kevin Johnson,7,defender,32,4,0,1,PSG
+136,Tyler Powell,7,defender,21,3,2,2,Sevilla
+137,Anita Murphy,7,defender,21,1,0,1,Olympiacos
+138,David Sanders,7,midfielder,35,4,1,1,Manchester United
+139,Michael Neal,7,midfielder,29,0,1,2,Barcelona
+140,Gina Stone,7,midfielder,29,2,1,2,RB Leipzig
+141,Stacey Chan,7,midfielder,18,1,1,2,Sevilla
+142,James Morrison,7,forward,36,2,0,2,Shakhtar Donetsk
+143,Joel Chapman,7,forward,29,4,2,0,Midtyjlland
+144,Mallory Wade,7,goalie,23,0,1,1,Bayern Munich
+145,David Davidson,7,defender,17,2,1,0,Juventus
+146,Marcus Rogers,7,defender,20,3,2,0,Porto
+147,Ashley Harper,7,defender,22,1,1,1,Juventus
+148,Dr. Lindsay Allen DDS,7,defender,18,4,0,0,Chelsea
+149,Marie Freeman,7,midfielder,28,4,2,2,Atletico Madrid
+150,Gabriel Velazquez,7,midfielder,28,4,0,1,Porto
+151,Brandy Spears,7,midfielder,39,4,1,0,Porto
+152,Katherine Hoover,7,midfielder,18,1,1,0,Rennes
+153,Lauren Adams,7,forward,25,0,1,2,Istanbul Basaksehir
+154,Randall Newton,7,forward,23,3,1,1,Manchester City
+155,Gregory Jones,8,goalie,31,0,2,0,Borussia Dortmund
+156,Cindy Osborn,8,defender,37,3,1,0,Olympiacos
+157,Tim Galvan,8,defender,37,0,1,2,Dynamo Kiev
+158,Michele Snyder,8,defender,32,4,2,2,Atletico Madrid
+159,Nicholas Oneill,8,defender,38,3,2,0,Midtyjlland
+160,Jason Lewis,8,midfielder,39,1,0,2,Borussia Monchengladbach
+161,Allison Bishop,8,midfielder,24,1,1,1,Manchester City
+162,Martin Stevenson Jr.,8,midfielder,39,2,1,0,Liverpool
+163,Bryan Pittman,8,midfielder,22,1,0,1,Borussia Dortmund
+164,Sherri Harris,8,forward,26,2,0,1,Olympiacos
+165,Edward Butler,8,forward,25,4,2,0,Ferencvaros
+166,Raymond Miller,8,goalie,33,0,0,1,Manchester United
+167,Hannah Brown,8,defender,39,1,2,0,Sevilla
+168,Ethan Hernandez,8,defender,20,4,1,0,Zenit
+169,Stacy Baker,8,defender,35,2,1,0,PSG
+170,Teresa Wilson,8,defender,34,3,1,2,Manchester United
+171,Justin Wilcox,8,midfielder,35,2,2,0,Ferencvaros
+172,Stacey Herrera,8,midfielder,28,2,2,2,Olympiacos
+173,Michael Anderson,8,midfielder,30,2,2,2,PSG
+174,John Nguyen,8,midfielder,31,1,0,0,Olympiacos
+175,Austin Manning,8,forward,29,1,1,0,Manchester City
+176,Kenneth Jones,8,forward,22,0,0,1,Atalanta
+177,Melissa Phillips,9,goalie,32,0,1,1,Lazio
+178,Kevin Lam,9,defender,17,0,2,2,Shakhtar Donetsk
+179,Kelly Wood,9,defender,38,2,0,1,Liverpool
+180,Emily Harris,9,defender,24,2,0,0,Lokomotiv Moscow
+181,Jared Marks,9,defender,27,4,0,0,Rennes
+182,Cesar Moore,9,midfielder,28,2,1,1,RB Leipzig
+183,Cameron Pacheco,9,midfielder,36,2,2,2,Lokomotiv Moscow
+184,Tracy Arnold,9,midfielder,34,3,0,0,Krasnodar
+185,Victoria Morrow,9,midfielder,24,4,2,2,Manchester United
+186,John Fitzgerald,9,forward,40,2,2,1,Borussia Monchengladbach
+187,Brad Mckinney,9,forward,20,3,1,0,Olympiacos
+188,Desiree Sparks,9,goalie,24,0,0,1,Real Madrid
+189,Tammy Butler,9,defender,33,3,0,1,Ferencvaros
+190,Elizabeth Bennett,9,defender,22,4,2,2,Marseille
+191,Dr. Cheryl Miller,9,defender,39,1,1,1,Chelsea
+192,Mckenzie Castillo,9,defender,30,1,1,2,Club Brugge
+193,Philip Smith,9,midfielder,24,3,0,2,Rennes
+194,Albert Oconnell,9,midfielder,19,2,1,0,PSG
+195,Beverly Salazar,9,midfielder,29,2,0,1,Atalanta
+196,Gina Mooney,9,midfielder,40,3,1,0,Midtyjlland
+197,James Campbell,9,forward,34,0,1,2,Liverpool
+198,Omar Parker,9,forward,40,3,0,0,Inter Milan
+199,Joshua Ho,10,goalie,29,0,0,1,Rennes
+200,Catherine Herman,10,defender,19,3,1,2,Chelsea
+201,Alexandra Thomas,10,defender,23,4,1,0,Sevilla
+202,Phillip Jones,10,defender,29,0,0,1,Ferencvaros
+203,Angela Martinez,10,defender,34,1,2,2,Atletico Madrid
+204,Christopher King,10,midfielder,29,4,0,1,Zenit
+205,Michael Best DDS,10,midfielder,33,0,1,0,Ferencvaros
+206,Danielle Kim,10,midfielder,19,3,0,2,Rennes
+207,Jason Terrell,10,midfielder,20,2,2,2,Manchester City
+208,Michael Myers,10,forward,39,0,2,2,Inter Milan

@@ -1,0 +1,272 @@
+
+ 
+Find the names and countryNames of forwards who played in game 560. 
+
+Select P.name, P.position, T.countryName
+From players P, games G, teams T
+Where T.teamID=G.team1ID 
+And P.teamID=T.teamID
+And G.gameID=560
+And P.position="forward"
+Union
+Select P.name, P.position, T.countryName
+From players P, games G, teams T
+Where T.teamID=G.team2ID 
+And P.teamID=T.teamID
+And G.gameID=560
+And P.position="forward";
+
+mysql> Select P.name, P.position, T.countryName
+    -> From players P, games G, teams T
+    -> Where T.teamID=G.team1ID 
+    -> And P.teamID=T.teamID
+    -> And G.gameID=560
+    -> And P.position="forward"
+    -> Union
+    -> Select P.name, P.position, T.countryName
+    -> From players P, games G, teams T
+    -> Where T.teamID=G.team2ID 
+    -> And P.teamID=T.teamID
+    -> And G.gameID=560
+    -> And P.position="forward";
++--------------------+----------+-------------+
+| name               | position | countryName |
++--------------------+----------+-------------+
+| Troy Lindsey       | forward  | Latvia      |
+| Christopher Nguyen | forward  | Latvia      |
+| Danielle Bryant    | forward  | Latvia      |
+| Kenneth Crawford   | forward  | Latvia      |
+| Jonathan Allen     | forward  | Belgium     |
+| Kristen Smith      | forward  | Belgium     |
+| Joshua Jarvis      | forward  | Belgium     |
+| Edward Holland     | forward  | Belgium     |
++--------------------+----------+-------------+
+8 rows in set (0.02 sec)
+
+
+Find the average age of each team for teamID's less than 20. 
+
+Select P.teamID, AVG(P.age)
+From players P
+Where teamID<20
+Group By p.teamID;
+
+mysql> Select P.teamID, AVG(P.age)
+    -> From players P
+    -> Where teamID<20
+    -> Group By p.teamID;
++--------+------------+
+| teamID | AVG(P.age) |
++--------+------------+
+|      1 |    28.9091 |
+|      2 |    28.4545 |
+|      3 |    30.3182 |
+|      4 |    29.5909 |
+|      5 |    30.9091 |
+|      6 |    27.5909 |
+|      7 |    26.5455 |
+|      8 |    31.1818 |
+|      9 |    29.7273 |
+|     10 |    26.5000 |
+|     11 |    29.2727 |
+|     12 |    29.5909 |
+|     13 |    29.9091 |
+|     14 |    27.6818 |
+|     15 |    27.5000 |
+|     16 |    25.6818 |
+|     17 |    26.6364 |
+|     18 |    30.5909 |
+|     19 |    28.1818 |
++--------+------------+
+19 rows in set (0.01 sec)
+
+Find the average number of wins per country for countries that have had more than 70 teams. 
+
+SELECT T.countryName, AVG(T.wins)
+FROM teams T
+GROUP BY T.countryName
+Having count(*)>70;
+
+mysql> SELECT T.countryName, AVG(T.wins)
+    -> FROM teams T
+    -> GROUP BY T.countryName
+    -> Having count(*)>70;
++-----------------+-------------+
+| countryName     | AVG(T.wins) |
++-----------------+-------------+
+| Poland          |      3.6712 |
+| Liechtenstein   |      3.4366 |
+| Germany         |      3.4267 |
+| Ukraine         |      3.6494 |
+| Switzerland     |      3.7917 |
+| Denmark         |      3.5556 |
+| Slovakia        |      3.2500 |
+| Netherlands     |      3.8933 |
+| Spain           |      4.0000 |
+| France          |      3.7105 |
+| Czech Republic  |      3.7260 |
+| Bulgaria        |      3.1625 |
+| Italy           |      3.8077 |
+| Moldova         |      3.3099 |
+| Slovenia        |      3.5000 |
+| Malta           |      2.9189 |
+| Austria         |      3.2400 |
+| Andorra         |      3.6389 |
+| North Macedonia |      3.6216 |
++-----------------+-------------+
+19 rows in set (0.00 sec)
+
+
+
+One should be a simple insert, one a simple update, and onean update that updates several tuples at once. In otherwords, show the relevant part of a relation pre/postinsertion and updatecommands.
+
+mysql> insert into players values (63889,"Abby Ward",2904,"midfielder",23,1,3,0, "Bayern Munich") ;
+Query OK, 1 row affected (0.05 sec)
+
+mysql> select name, teamID, position, age from players p where p.teamID= 2904;
++-------------------+--------+------------+------+
+| name              | teamID | position   | age  |
++-------------------+--------+------------+------+
+| Amanda Simmons    |   2904 | goalie     |   36 |
+| Melinda Eaton     |   2904 | defender   |   25 |
+| Dawn Kelly        |   2904 | defender   |   27 |
+| Anna Jackson      |   2904 | defender   |   21 |
+| Michael Frank     |   2904 | defender   |   19 |
+| Ashley Smith      |   2904 | midfielder |   23 |
+| Aaron Martin      |   2904 | midfielder |   40 |
+| Jerry Walker      |   2904 | midfielder |   36 |
+| Christina Johnson |   2904 | midfielder |   22 |
+| Stephanie Brown   |   2904 | forward    |   28 |
+| Suzanne Allen     |   2904 | forward    |   40 |
+| Joe Brown         |   2904 | goalie     |   30 |
+| Natalie George    |   2904 | defender   |   27 |
+| Tammy Knight      |   2904 | defender   |   34 |
+| Samantha Burns    |   2904 | defender   |   26 |
+| Ryan Graham       |   2904 | defender   |   29 |
+| Rebecca Jackson   |   2904 | midfielder |   31 |
+| Jonathan Joseph   |   2904 | midfielder |   18 |
+| Dustin Jones      |   2904 | midfielder |   36 |
+| Melissa Meadows   |   2904 | midfielder |   19 |
+| Nicholas Andrews  |   2904 | forward    |   25 |
+| Darin Williams    |   2904 | forward    |   20 |
+| Abby Ward         |   2904 | midfielder |   23 |
++-------------------+--------+------------+------+
+23 rows in set (0.01 sec)
+
+
+UPDATE Players
+SET name="Noah Stewart", Position= 'forward'
+WHERE playerID = 63889;
+	 
+mysql> UPDATE Players
+    -> SET name="Noah Stewart", Position= 'forward'
+    -> WHERE playerID = 63889;
+Query OK, 1 row affected (0.03 sec)
+mysql> select name, teamID, position, age, goals from players p where p.teamID= 2904;
++-------------------+--------+------------+------+
+| name              | teamID | position   | age  |
++-------------------+--------+------------+------+
+| Amanda Simmons    |   2904 | goalie     |   36 |
+| Melinda Eaton     |   2904 | defender   |   25 |
+| Dawn Kelly        |   2904 | defender   |   27 |
+| Anna Jackson      |   2904 | defender   |   21 |
+| Michael Frank     |   2904 | defender   |   19 |
+| Ashley Smith      |   2904 | midfielder |   23 |
+| Aaron Martin      |   2904 | midfielder |   40 |
+| Jerry Walker      |   2904 | midfielder |   36 |
+| Christina Johnson |   2904 | midfielder |   22 |
+| Stephanie Brown   |   2904 | forward    |   28 |
+| Suzanne Allen     |   2904 | forward    |   40 |
+| Joe Brown         |   2904 | goalie     |   30 |
+| Natalie George    |   2904 | defender   |   27 |
+| Tammy Knight      |   2904 | defender   |   34 |
+| Samantha Burns    |   2904 | defender   |   26 |
+| Ryan Graham       |   2904 | defender   |   29 |
+| Rebecca Jackson   |   2904 | midfielder |   31 |
+| Jonathan Joseph   |   2904 | midfielder |   18 |
+| Dustin Jones      |   2904 | midfielder |   36 |
+| Melissa Meadows   |   2904 | midfielder |   19 |
+| Nicholas Andrews  |   2904 | forward    |   25 |
+| Darin Williams    |   2904 | forward    |   20 |
+| Noah Stewart      |   2904 | forward    |   23 |
++-------------------+--------+------------+------+
+23 rows in set (0.00 sec)
+
+
+BEFORE: 
+mysql> select name, teamID, position, age, goals from players p where p.teamID=
+2904;
++-------------------+--------+------------+------+-------+
+| name              | teamID | position   | age  | goals |
++-------------------+--------+------------+------+-------+
+| Amanda Simmons    |   2904 | goalie     |   36 |     0 |
+| Melinda Eaton     |   2904 | defender   |   25 |     2 |
+| Dawn Kelly        |   2904 | defender   |   27 |     1 |
+| Anna Jackson      |   2904 | defender   |   21 |     4 |
+| Michael Frank     |   2904 | defender   |   19 |     4 |
+| Ashley Smith      |   2904 | midfielder |   23 |     0 |
+| Aaron Martin      |   2904 | midfielder |   40 |     3 |
+| Jerry Walker      |   2904 | midfielder |   36 |     1 |
+| Christina Johnson |   2904 | midfielder |   22 |     1 |
+| Stephanie Brown   |   2904 | forward    |   28 |     2 |
+| Suzanne Allen     |   2904 | forward    |   40 |     1 |
+| Joe Brown         |   2904 | goalie     |   30 |     0 |
+| Natalie George    |   2904 | defender   |   27 |     3 |
+| Tammy Knight      |   2904 | defender   |   34 |     1 |
+| Samantha Burns    |   2904 | defender   |   26 |     1 |
+| Ryan Graham       |   2904 | defender   |   29 |     4 |
+| Rebecca Jackson   |   2904 | midfielder |   31 |     3 |
+| Jonathan Joseph   |   2904 | midfielder |   18 |     4 |
+| Dustin Jones      |   2904 | midfielder |   36 |     2 |
+| Melissa Meadows   |   2904 | midfielder |   19 |     2 |
+| Nicholas Andrews  |   2904 | forward    |   25 |     2 |
+| Darin Williams    |   2904 | forward    |   20 |     4 |
+| Noah Stewart      |   2904 | forward    |   23 |     1 |
++-------------------+--------+------------+------+-------+
+23 rows in set (0.00 sec)
+
+mysql> update players
+    -> set goals = goals + 1
+    -> where teamID=2904 ;
+Query OK, 23 rows affected (0.02 sec)
+Rows matched: 23  Changed: 23  Warnings: 0
+
+AFTER:
+mysql> select name, teamID, position, age, goals from players p where p.teamID= 2904;
++-------------------+--------+------------+------+-------+
+| name              | teamID | position   | age  | goals |
++-------------------+--------+------------+------+-------+
+| Amanda Simmons    |   2904 | goalie     |   36 |     1 |
+| Melinda Eaton     |   2904 | defender   |   25 |     3 |
+| Dawn Kelly        |   2904 | defender   |   27 |     2 |
+| Anna Jackson      |   2904 | defender   |   21 |     5 |
+| Michael Frank     |   2904 | defender   |   19 |     5 |
+| Ashley Smith      |   2904 | midfielder |   23 |     1 |
+| Aaron Martin      |   2904 | midfielder |   40 |     4 |
+| Jerry Walker      |   2904 | midfielder |   36 |     2 |
+| Christina Johnson |   2904 | midfielder |   22 |     2 |
+| Stephanie Brown   |   2904 | forward    |   28 |     3 |
+| Suzanne Allen     |   2904 | forward    |   40 |     2 |
+| Joe Brown         |   2904 | goalie     |   30 |     1 |
+| Natalie George    |   2904 | defender   |   27 |     4 |
+| Tammy Knight      |   2904 | defender   |   34 |     2 |
+| Samantha Burns    |   2904 | defender   |   26 |     2 |
+| Ryan Graham       |   2904 | defender   |   29 |     5 |
+| Rebecca Jackson   |   2904 | midfielder |   31 |     4 |
+| Jonathan Joseph   |   2904 | midfielder |   18 |     5 |
+| Dustin Jones      |   2904 | midfielder |   36 |     3 |
+| Melissa Meadows   |   2904 | midfielder |   19 |     3 |
+| Nicholas Andrews  |   2904 | forward    |   25 |     3 |
+| Darin Williams    |   2904 | forward    |   20 |     5 |
+| Noah Stewart      |   2904 | forward    |   23 |     2 |
++-------------------+--------+------------+------+-------+
+23 rows in set (0.00 sec)
+
+
+
+
+
+
+
+
+

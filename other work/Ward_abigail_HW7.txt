@@ -1,0 +1,200 @@
+PART 1)
+ 
+Create table Players (
+	playerID int NOT NULL,
+	name varchar(30) NOT NULL,
+	teamID int NOT NULL,
+	position varchar(20),
+	age int,
+	goals int,
+	assists int,
+	yellowCards int,
+	regularTeam varchar(30),
+	PRIMARY KEY (playerID),
+  FOREIGN KEY (teamID) REFERENCES Teams(teamID) ) ;
+
+mysql> insert into players values(63890, "Abby Ward", 3000, "defender", 23,4,0,0,"Red Bull Salzburg")
+    -> ;
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`euros`.`players`, CONSTRAINT `players_ibfk_1` FOREIGN KEY (`teamID`) REFERENCES `teams` (`teamID`))
+
+
+mysql> UPDATE players SET teamID=3000 WHERE playerID=63889;
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`euros`.`players`, CONSTRAINT `players_ibfk_1` FOREIGN KEY (`teamID`) REFERENCES `teams` (`teamID`))
+
+
+
+
+PART 2)
+
+This procedure changes the score of a single game. This would be used as games are played. All of the other information such as the teams, the stadium and date could have been pre-filled when the tournament was created but the score would be updated after the game was played. Outputs the pre- and post- updated table entry and a variable to call to display each team name.
+
+Drop procedure if exists update_game ;
+
+Delimiter //
+
+Create procedure update_game(IN ingameID int, IN inteam1score INT, IN inteam2score INT, OUT outteam1 VARCHAR(20), OUT outteam2 VARCHAR(20))
+
+Begin
+
+Select * from games where gameID= ingameID ;
+
+UPDATE games
+SET team1score=inteam1score, team2score= inteam2score
+WHERE gameID = ingameID;
+
+Select * from games where gameID= ingameID ;
+
+select t.countryName INTO outteam1
+from teams t, games g
+where t.teamID=g.team1ID and g.gameID=ingameID;
+
+select t.countryName INTO outteam2
+from teams t, games g
+where t.teamID=g.team2ID and g.gameID=ingameID;
+
+End //
+
+Delimiter ;
+
+Call update_game(120, 3, 1,@team1, @team2);
+
+mysql> Drop procedure if exists update_game ;
+Query OK, 0 rows affected, 1 warning (0.01 sec)
+
+mysql> 
+mysql> Delimiter //
+mysql> 
+mysql> Create procedure update_game(IN ingameID int, IN inteam1score INT, IN inteam2score INT, OUT outteam1 VARCHAR(20), OUT outteam2 VARCHAR(20))
+    -> 
+    -> Begin
+    -> 
+    -> Select * from games where gameID= ingameID ;
+    -> 
+    -> UPDATE games
+    -> SET team1score=inteam1score, team2score= inteam2score
+    -> WHERE gameID = ingameID;
+    -> 
+    -> Select * from games where gameID= ingameID ;
+    -> 
+    -> select t.countryName INTO outteam1
+    -> from teams t, games g
+    -> where t.teamID=g.team1ID and g.gameID=ingameID;
+    -> 
+    -> select t.countryName INTO outteam2
+    -> from teams t, games g
+    -> where t.teamID=g.team2ID and g.gameID=ingameID;
+    -> 
+    -> End //
+Query OK, 0 rows affected (0.06 sec)
+
+mysql> 
+mysql> Delimiter ;
+mysql> Call update_game(120, 3, 1,@team1, @team2);
++--------+------------+----------------+---------+---------+-----------+------------+------------+------------+
+| gameID | gameNumber | sname          | team1ID | team2ID | roundName | gdate      | team1score | team2score |
++--------+------------+----------------+---------+---------+-----------+------------+------------+------------+
+|    120 |         18 | Pearse Stadium |      67 |      54 | Group C   | 1903-06-17 |          2 |          0 |
++--------+------------+----------------+---------+---------+-----------+------------+------------+------------+
+1 row in set (0.06 sec)
+
++--------+------------+----------------+---------+---------+-----------+------------+------------+------------+
+| gameID | gameNumber | sname          | team1ID | team2ID | roundName | gdate      | team1score | team2score |
++--------+------------+----------------+---------+---------+-----------+------------+------------+------------+
+|    120 |         18 | Pearse Stadium |      67 |      54 | Group C   | 1903-06-17 |          3 |          1 |
++--------+------------+----------------+---------+---------+-----------+------------+------------+------------+
+1 row in set (0.06 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+mysql> select @team1;
++--------+
+| @team1 |
++--------+
+| France |
++--------+
+1 row in set (0.00 sec)
+
+mysql> select @team2;
++---------+
+| @team2  |
++---------+
+| Hungary |
++---------+
+1 row in set (0.01 sec)
+
+
+
+
+PART 3)
+
+Drop procedure if exists indexingTest ;
+
+Delimiter //
+Create procedure indexingTest(OUT result INT)
+Begin
+Declare counter INT default 0;
+While counter < 1000 do
+Select count(*) into result from players where age=24;
+Set counter = counter + 1;
+End while;
+
+End //
+
+Delimiter ;
+
+
+mysql> Drop procedure if exists indexingTest ;
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> 
+mysql> Delimiter //
+mysql> Create procedure indexingTest(OUT result INT)
+    -> Begin
+    -> Declare counter INT default 0;
+    -> While counter < 1000 do
+    -> Select count(*) into result from players where age=24;
+    -> Set counter = counter + 1;
+    -> End while;
+    -> 
+    -> End //
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> 
+mysql> Delimiter ;
+
+Before indexing age:
+mysql> call indexingTest(@result);
+Query OK, 1 row affected (59.59 sec)
+
+
+After indexing age:
+mysql> call indexingTest(@result);
+Query OK, 1 row affected (0.50 sec)
+
+
+
+Drop procedure if exists indexingTest_join ;
+
+Delimiter //
+Create procedure indexingTest_join(OUT result INT)
+Begin
+Declare counter INT default 0;
+While counter < 10000 do
+Select count(*) into result from players p, teams t where p.teamID=t.teamID and t.year=1998 ;
+Set counter = counter + 1;
+End while;
+
+End //
+
+Delimiter ;
+
+
+Before indexing year in the teams table
+mysql> call indexingTest_join(@result);
+Query OK, 1 row affected (18.33 sec)
+
+After indexing year in the teams table
+mysql> call indexingTest_join(@result);
+Query OK, 1 row affected (1.65 sec)
+
+

@@ -1,0 +1,223 @@
+mysql> Select *
+    -> From sailors s
+    -> Where s.age=18 
+    -> And s.rating > 9 ;
++------+---------+------+--------+
+| sid  | name    | age  | rating |
++------+---------+------+--------+
+|   79 | Bob79   |   18 |     10 |
+|  786 | Bob786  |   18 |     10 |
+|  981 | Bob981  |   18 |     10 |
+| 1390 | Bob1390 |   18 |     10 |
+| 1885 | Bob1885 |   18 |     10 |
++------+---------+------+--------+
+5 rows in set (0.00 sec)
+
+mysql> SELECT r.sid,
+    ->        MIN(r.rdate)
+    -> FROM reserve r
+    -> WHERE r.sid<5 
+    -> GROUP BY r.sid;
++-----+--------------+
+| sid | MIN(r.rdate) |
++-----+--------------+
+|   1 | 2019-01-23   |
+|   2 | 2019-06-19   |
+|   3 | 2019-09-02   |
+|   4 | 2019-03-06   |
++-----+--------------+
+4 rows in set (0.00 sec)
+
+mysql> Select count(*)
+    -> From reserve r, sailors s
+    -> Where r.sid=s.sid 
+    -> And s.age=18;
++----------+
+| count(*) |
++----------+
+|      129 |
++----------+
+1 row in set (0.01 sec)
+
+
+
+mysql> Select s.name, s.age, b.name
+    -> From sailors s, boats b, reserve r
+    -> Where r.sid=s.sid
+    -> And b.bid=r.bid 
+    -> And r.rdate="2019-01-23"
+    -> And s.age>=40
+    -> Order by s.age;
++---------+------+----------+
+| name    | age  | name     |
++---------+------+----------+
+| Bob805  |   40 | guppy911 |
+| Bob1962 |   40 | guppy756 |
+| Bob1693 |   44 | guppy475 |
+| Bob945  |   46 | guppy731 |
+| Bob1    |   48 | guppy987 |
+| Bob1238 |   51 | guppy246 |
+| Bob1589 |   51 | guppy11  |
+| Bob1311 |   58 | guppy942 |
+| Bob1491 |   60 | guppy693 |
+| Bob498  |   61 | guppy817 |
+| Bob158  |   78 | guppy48  |
+| Bob288  |   79 | guppy669 |
+| Bob1229 |   86 | guppy123 |
+| Bob1250 |   86 | guppy796 |
+| Bob1064 |   87 | guppy523 |
+| Bob1150 |   89 | guppy661 |
+| Bob951  |   91 | guppy3   |
++---------+------+----------+
+17 rows in set (0.01 sec)
+
+mysql> SELECT *
+    -> FROM boats b
+    -> WHERE b.bcolor="Pumpkin" 
+    -> And b.ratingNeeded=10
+    -> ;
++-----+----------+--------------+---------+
+| bid | name     | ratingNeeded | bcolor  |
++-----+----------+--------------+---------+
+| 413 | guppy413 |           10 | pumpkin |
+| 755 | guppy755 |           10 | pumpkin |
+| 772 | guppy772 |           10 | pumpkin |
+| 864 | guppy864 |           10 | pumpkin |
+| 899 | guppy899 |           10 | pumpkin |
+| 964 | guppy964 |           10 | pumpkin |
++-----+----------+--------------+---------+
+6 rows in set (0.00 sec)
+
+mysql> Select s.name, s.rating, b.ratingNeeded, b.bid
+    -> From sailors s, reserve r, boats b
+    -> Where s.sid=r.sid
+    -> And r.bid=b.bid
+    -> And s.age=18
+    -> And b.ratingNeeded>s.rating;
++---------+--------+--------------+-----+
+| name    | rating | ratingNeeded | bid |
++---------+--------+--------------+-----+
+| Bob22   |      3 |            5 | 609 |
+| Bob59   |      5 |            7 |   1 |
+| Bob59   |      5 |            7 | 189 |
+| Bob59   |      5 |            7 | 422 |
+| Bob142  |      6 |            8 | 702 |
+| Bob142  |      6 |            9 | 862 |
+| Bob165  |      5 |            7 | 696 |
+| Bob165  |      5 |           10 | 767 |
+| Bob194  |      3 |            7 |   1 |
+| Bob194  |      3 |            9 | 488 |
+| Bob194  |      3 |            6 | 775 |
+| Bob433  |      5 |            6 | 104 |
+| Bob433  |      5 |            6 | 537 |
+| Bob433  |      5 |           10 | 666 |
+| Bob508  |      2 |           10 | 706 |
+| Bob537  |      5 |            9 | 698 |
+| Bob537  |      5 |           10 | 835 |
+| Bob692  |      4 |            8 | 208 |
+| Bob692  |      4 |            5 | 623 |
+| Bob692  |      4 |           10 | 755 |
+| Bob800  |      2 |            9 |   9 |
+| Bob800  |      2 |            8 | 940 |
+| Bob845  |      8 |           10 | 317 |
+| Bob845  |      8 |           10 | 994 |
+| Bob866  |      1 |           10 |  23 |
+| Bob866  |      1 |            5 | 452 |
+| Bob866  |      1 |            8 | 644 |
+| Bob866  |      1 |            2 | 877 |
+| Bob866  |      1 |            7 | 954 |
+| Bob1017 |      7 |            8 |  26 |
+| Bob1017 |      7 |            8 | 109 |
+| Bob1017 |      7 |            9 | 304 |
+| Bob1025 |      7 |            9 | 497 |
+| Bob1025 |      7 |           10 | 772 |
+| Bob1025 |      7 |           10 | 800 |
+| Bob1164 |      4 |            9 | 878 |
+| Bob1207 |      7 |           10 | 216 |
+| Bob1207 |      7 |            9 | 520 |
+| Bob1207 |      7 |            9 | 740 |
+| Bob1416 |      7 |            8 |  58 |
+| Bob1452 |      2 |            7 | 559 |
+| Bob1452 |      2 |            4 | 567 |
+| Bob1452 |      2 |            3 | 797 |
+| Bob1452 |      2 |            5 | 844 |
+| Bob1587 |      8 |           10 | 409 |
+| Bob1587 |      8 |           10 | 507 |
+| Bob1726 |      7 |           10 | 772 |
+| Bob1835 |      5 |            9 | 671 |
++---------+--------+--------------+-----+
+48 rows in set (0.01 sec)
+
+
+mysql> Select s.sid, count(s.sid)
+    -> From sailors s, reserve r, boats b
+    -> Where s.sid=r.sid
+    -> And b.bid=r.bid
+    -> And s.age=18
+    -> And b.ratingNeeded>s.rating
+    -> Group by s.sid
+    -> Having count(*)>=1
+    -> Order by s.sid;
++------+--------------+
+| sid  | count(s.sid) |
++------+--------------+
+|   22 |            1 |
+|   59 |            3 |
+|  142 |            2 |
+|  165 |            2 |
+|  194 |            3 |
+|  433 |            3 |
+|  508 |            1 |
+|  537 |            2 |
+|  692 |            3 |
+|  800 |            2 |
+|  845 |            2 |
+|  866 |            5 |
+| 1017 |            3 |
+| 1025 |            3 |
+| 1164 |            1 |
+| 1207 |            3 |
+| 1416 |            1 |
+| 1452 |            4 |
+| 1587 |            2 |
+| 1726 |            1 |
+| 1835 |            1 |
++------+--------------+
+21 rows in set (0.01 sec)
+
+mysql> SELECT s.age,
+    ->        AVG(s.rating)
+    -> FROM sailors s
+    -> WHERE s.age>30
+    -> And s.age<40
+    -> GROUP BY s.age;
++------+-------------------+
+| age  | AVG(s.rating)     |
++------+-------------------+
+|   36 | 6.785714285714286 |
+|   31 | 7.066666666666666 |
+|   37 | 7.235294117647059 |
+|   33 | 7.909090909090909 |
+|   38 | 6.068965517241379 |
+|   34 | 6.542857142857143 |
+|   35 | 6.894736842105263 |
+|   32 | 6.413793103448276 |
+|   39 |           5.84375 |
++------+-------------------+
+9 rows in set (0.01 sec)
+
+mysql> SELECT s.age,
+    ->        AVG(s.rating)
+    -> FROM sailors s
+    -> WHERE s.age>30
+    -> And s.age<40
+    -> GROUP BY s.age
+    -> Having count(*)>30;
++------+-------------------+
+| age  | AVG(s.rating)     |
++------+-------------------+
+|   37 | 7.235294117647059 |
+|   34 | 6.542857142857143 |
+|   39 |           5.84375 |
++------+-------------------+
+3 rows in set (0.00 sec)

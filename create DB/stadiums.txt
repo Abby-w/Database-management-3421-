@@ -1,0 +1,307 @@
+Camp Nou,Barcelona,108047
+Wembley Stadium,London,33578
+Croke Park,Dublin,18352
+Twickenham Stadium,London,122214
+Signal Iduna Park,Dortmund,26233
+Santiago Bernabéu Stadium,Madrid,67454
+Stade de France,Saint-Denis,40486
+Stadio Giuseppe Meazza (San Siro),Milan,105321
+Luzhniki Stadium,Moscow,131488
+Atatürk Olympic Stadium,Istanbul,32405
+Athens Olympic Stadium,Athens,109604
+Allianz Arena,Munich,139304
+Old Trafford,Manchester,136310
+Olympiastadion,Berlin,42784
+Millennium Stadium,Cardiff,91189
+Stadio Olimpico,Rome,22707
+NSC Olimpiyskiy,Kyiv,42888
+Olympiastadion,Munich,131660
+Baku Olympic Stadium,Baku,61481
+Metropolitano Stadium,Madrid,49747
+Stade Vélodrome,Marseille,68267
+Puskás Aréna,Budapest,98172
+Murrayfield Stadium,Edinburgh,26566
+Krestovsky Stadium,Saint Petersburg,138015
+London Stadium,London,75830
+Estádio da Luz,Lisbon,32273
+Tottenham Hotspur Stadium,London,81660
+Veltins-Arena,Gelsenkirchen,70879
+Estadio Benito Villamarín,Seville,90116
+Emirates Stadium,London,55394
+Mercedes-Benz Arena,Stuttgart,76456
+Celtic Park,Glasgow,17299
+Estadi Olímpic Lluís Companys,Barcelona,91096
+Estadio Olímpico de Sevilla,Seville,143191
+Parc Olympique Lyonnais,Lyon,127526
+PGE Narodowy,Warsaw,44077
+Stadio San Nicola,Bari,127240
+Volksparkstadion,Hamburg,37043
+Johan Cruyff Arena,Amsterdam,99194
+Arena Naţională,Bucharest,44110
+Stadium Rajko Mitić,Belgrade,103167
+Silesian Stadium,Chorzów,103046
+Etihad Stadium,Manchester,144268
+Stadio Diego Armando Maradona,Naples,109945
+Merkur Spiel-Arena,Düsseldorf,96605
+Boris Paichadze Dinamo Arena,Tbilisi,65455
+Friends Arena,Stockholm,102961
+Hrazdan Stadium,Yerevan,119805
+Anfield,Liverpool,93606
+Borussia-Park,Mönchengladbach,30356
+San Mamés,Bilbao,48737
+Ernst Happel Stadion,Vienna,46768
+St James' Park,Newcastle upon Tyne,72582
+Türk Telekom Stadium,Istanbul,43751
+Donbass Arena,Donetsk,72853
+Hampden Park,Glasgow,40256
+Aviva Stadium,Dublin,92677
+De Kuip,Rotterdam,17442
+Commerzbank-Arena,Frankfurt,67187
+İzmir Atatürk Stadium,Izmir,133044
+Ibrox Stadium,Glasgow,67179
+RheinEnergieStadion,Cologne,93934
+Stade Pierre-Mauroy,Lille,135831
+Estádio José Alvalade,Lisbon,77084
+King Baudouin Stadium,Brussels,85691
+Estádio do Dragão,Porto,71079
+Max-Morlock-Stadion,Nuremberg,83134
+Gaelic Grounds,Limerick,43000
+Fritz-Walter-Stadion,Kaiserslautern,20632
+Mestalla Stadium,Valencia,19377
+HDI-Arena,Hanover,33777
+Stadium of Light,Sunderland,127633
+Parc des Princes,Paris,146051
+Şükrü Saracoğlu Stadium,Istanbul,30841
+Semple Stadium,Thurles,23964
+Volgograd Arena,Volgograd,135549
+Otkrytie Arena,Moscow,104288
+Kazan Arena,Kazan,124292
+Wrocław Stadium,Wrocław,120512
+Panathinaiko Stadium,Athens,81277
+Páirc Uí Chaoimh,Cork City,131791
+Rostov Arena,Rostov-on-Don,18170
+Cosmos Arena,Samara,83329
+Strelka Stadium,Nizhny Novgorod,95889
+Mordovia Arena,Saransk,123928
+Red Bull Arena,Leipzig,32183
+Bursa Büyüksehir Stadium,Bursa,84165
+Arena Gdańsk,Gdańsk,82343
+Vasil Levski National Stadium,Sofia,96212
+Lech Stadium,Poznań,110051
+Şenol Güneş Stadium,Trabzon,146541
+Fitzgerald Stadium,Killarney,106880
+Stadio Artemio Franchi,Florence,136653
+Ullevi,Gothenburg,61727
+Villa Park,Birmingham,144749
+Estadio Ramón Sánchez Pizjuán,Seville,85366
+Vodafone Stadium,Istanbul,121319
+Weserstadion,Bremen,24851
+Matmut Atlantique,Bordeaux,51970
+MacHale Park,Castlebar,142515
+Stade Geoffroy-Guichard,Saint-Étienne,111155
+Stamford Bridge,London,18685
+Allianz Stadium (Juventus Stadium),Turin,103419
+Fisht Olympic Stadium,Sochi,99884
+Helsinki Olympic Stadium,Helsinki,145059
+Estadi Cornellà-El Prat,Barcelona,125100
+Stadio San Filippo,Messina,92249
+Metalist Stadium,Kharkiv,117256
+Hillsborough Stadium,Sheffield,21154
+Goodison Park,Liverpool,32970
+Estadio Anoeta,San Sebastián,45327
+Stadio Renato Dall'Ara,Bologna,53850
+Stadio Marcantonio Bentegodi,Verona,117092
+Estadio Manuel Martínez Valero,Elche,147050
+St. Jakob-Park,Basel,39848
+Stade Bollaert-Delelis,Lens,140970
+Parken,Copenhagen,84221
+Elland Road,Leeds,75908
+Torku Arena,Konya,59339
+Stadio Renzo Barbera,Palermo,66366
+Estádio Nacional,Oeiras,93440
+Stadio Arechi,Salerno,105298
+Maksimir Stadium,Zagreb,128672
+Cebeci İnönü Stadium,Ankara,80305
+Stadio Luigi Ferraris,Genoa,139117
+Toše Proeski Arena,Skopje,93361
+New Adana Stadium,Adana,32385
+St Tiernach's Park,Clones,114101
+Central Stadium (Yekaterinburg),Yekaterinburg,100612
+Allianz Riviera,Nice,118768
+Stade de la Beaujoire,Nantes,64835
+Ludwigspark Stadion,Saarbrücken,126841
+Gaziantep Arena,Gaziantep,64164
+Kaliningrad Stadium,Kaliningrad,90963
+Kuban Stadium,Krasnodar,116588
+Riverside Stadium,Middlesbrough,40872
+Krasnodar Stadium,Krasnodar,27141
+Stade de Gerland,Lyon,85743
+Stadion Poljud,Split,69472
+Olympic Stadium,Wrocław,121996
+Philips Stadion,Eindhoven,57894
+New Eskişehir Stadium,Eskişehir,138048
+Arena Lviv,Lviv,70886
+Izmit Stadium,Izmit,125789
+Stade Jacques Chaban-Delmas,Bordeaux,116179
+Riazor,A Coruña,112243
+La Romareda,Zaragoza,74144
+Asim Ferhatović Hase Stadium,Sarajevo,123603
+Grotenburg-Stadion,Krefeld,55583
+Chornomorets Stadium,Odessa,47563
+Opel Arena,Mainz,109159
+Pearse Stadium,Galway,72502
+Gelredome,Arnhem,40331
+Samsun Stadium,Samsun,144467
+Pride Park Stadium,Derby,125854
+Stadion Henryka Reymana,Kraków,138391
+Stadium Municipal,Toulouse,109371
+Cardiff City Stadium,Cardiff,52944
+Metallurg Stadium,Samara,84152
+Estadio Nueva Condomina,Murcia,143733
+Khimik Stadium (Kemerovo),Kemerovo,24556
+Tele2 Arena,Stockholm,132777
+Antalya 100.yıl Stadium,Antalya,149103
+Diyarbakır Stadium,Diyarbakır,55080
+Dan Păltinişanu Stadium,Timișoara,126364
+New Tivoli,Aachen,49796
+Stade de la Mosson,Montpellier,32742
+Kadir Has Stadium,Kayseri,75687
+Estádio Municipal de Aveiro,"Aveiro, Portugal",40637
+Coventry Building Society Arena,Coventry,95419
+Partizan Stadium,Belgrade,24355
+Bramall Lane,Sheffield,57706
+St Mary's Stadium,Southampton,50123
+Estadio Balaídos,Vigo,146057
+Republican Spartak Stadium,Vladikavkaz,96657
+Stadio Nereo Rocco,Trieste,145163
+Estadio Gran Canaria,Las Palmas,99340
+Rosenaustadion,Augsburg,26043
+Stadio Euganeo,Padova,53753
+King Power Stadium,Leicester,133529
+Karaiskakis Stadium,Piraeus,144089
+Rudolf Harbig Stadion,Dresden,54886
+Hypo-Arena,Klagenfurt am Wörthersee,26518
+Casement Park,Belfast,38662
+Breffni Park,Cavan,118523
+Stade de Suisse,Bern,124489
+Lord's,London,98190
+Paris La Défense Arena,Nanterre,66701
+Ernest Pohl Stadium,Zabrze,52639
+Polish Army Stadium,Warsaw,33119
+Tsentralnyi Profsoyuz Stadion,Voronezh,149953
+Shakhtar Stadium,Donetsk,146550
+Molineux Stadium,Wolverhampton,147185
+Stadio Via del Mare,Lecce,149977
+Schauinsland-Reisen-Arena,Duisburg,76003
+Ewood Park,Blackburn,64602
+Tofiq Bahramov Stadium,Baku,123787
+Dnipro-Arena,Dnipro,88563
+Stadionul Ion Oblemenco,Craiova,105531
+Falmer Stadium,Brighton,58383
+WWK Arena,Augsburg,91226
+Terek Stadium,Grozni,100290
+Stadium MK,Milton Keynes,139089
+Estadio Carlos Tartiere,Oviedo,85068
+VEB Arena,Moscow,123492
+City Ground,Nottingham,31773
+Cluj Arena,Cluj Napoca,100798
+Portman Road,Ipswich,70385
+Estádio Algarve,"Faro, Portugal",49428
+Estádio Municipal de Braga,Braga,32128
+Astana Arena,Nur-Sultan,53822
+BayArena,Leverkusen,70346
+De Grolsch Veste,Enschede,123664
+Red Bull Arena (Salzburg),Salzburg,97723
+PreZero Arena,Sinsheim,95238
+Volkswagen Arena,Wolfsburg,137963
+bet365 Stadium,Stoke-on-Trent,147140
+Stade de Genève,Geneva,22375
+Estadio La Rosaleda,Málaga,98048
+Estádio D. Afonso Henriques,Guimarães,91507
+Stade Maurice Dufrasne,Liège,44998
+St Andrew's Stadium,Birmingham,87930
+Malmö Stadion,Malmö,91442
+Letzigrund,Zürich,108651
+Stade Municipal Saint-Symphorien,Metz,136142
+Stadio Flaminio,Rome,69232
+Roazhon Park,Rennes,112318
+Wildparkstadion,Karlsruhe,71604
+Estádio Cidade de Coimbra,Coimbra,42008
+Estadio José Rico Pérez,Alicante,105466
+Millerntor-Stadion,Hamburg,85755
+Jan Breydel Stadium,Bruges,39365
+El Molinón,Gijón,77194
+Brøndby Stadium,Copenhagen,121788
+DKB-Arena,Rostock,143386
+Toumba Stadium,Thessaloniki,22944
+Şanlıurfa GAP Stadium,Şanlıurfa,93095
+Lokomotiv Stadium (Moscow),Moscow,45703
+University of Bolton Stadium,Bolton,141621
+Estádio do Bessa,Porto,25769
+Sakarya Stadium,Sakarya,42231
+Constant Vanden Stock Stadium,Brussels,115169
+Ukraina Stadium,Lviv,85674
+Estádio 1º de Maio,Braga,23095
+Allianz Stadion,Vienna,59547
+Stadio Renato Curi,Perugia,139837
+Ullevaal Stadion,Oslo,95465
+Stadio Olimpico Grande Torino,Turin,87042
+Stadio Ennio Tardini,Parma,68551
+Estadio José Zorrilla,Valladolid,98389
+Stadio Oreste Granillo,Reggio Calabria,38125
+Ruhrstadion,Bochum,145690
+Stadio Erasmo Iacovone,Taranto,110522
+Stadio Mario Rigamonti,Brescia,87979
+New 4 Eylül Stadium,Sivas,39828
+Odsal Stadium,Bradford,44665
+MDCC-Arena,Magdeburg,74565
+Carrow Road,Norwich,44385
+Mikheil Meskhi Stadium,Tbilisi,90070
+The Valley (London),London,124185
+Ashton Gate Stadium,Bristol,126451
+Carl-Benz-Stadion,Mannheim,138215
+Central Stadium (Krasnoyarsk),Krasnoyarsk,145752
+O'Moore Park,Portlaoise,138253
+Pankritio Stadium,Heraklio,38588
+Kaftanzoglio Stadium,Thessaloniki,138452
+The Hawthorns,West Bromwich,92217
+The Oval,Belfast,124445
+SchücoArena,Bielefeld,128652
+Anzhi-Arena,Kaspiysk,89183
+Estadi Ciutat de València,Valencia,85831
+VTB Arena,Moscow,27304
+Selhurst Park,London,148875
+Stadio Partenio,Avellino,142160
+Ganja City Stadium,"Ganja, Azerbaijan",93971
+Stade de la Meinau,Strasbourg,66003
+Abe Lenstra Stadion,Heerenveen,76994
+Stadio del Conero,Ancona,38781
+Welford Road Stadium,Leicester,68690
+Old Trafford Cricket Ground,Manchester,23307
+Yuvileiny Stadium,Sumy,72938
+Craven Cottage,London,37318
+RSC Olimpiyskiy,Donetsk,129898
+Thomond Park,Limerick,31497
+Malatya Stadium,Malatya,118889
+Slavia Stadium,Sofia,127242
+Mersin Arena,Mersin,59475
+MKM Stadium,Kingston upon Hull,148377
+Central Stadium,Kazan,81452
+Stade Océane,Le Havre,117213
+Stade du Hainaut,Valenciennes,139632
+Stadio Friuli,Udine,147989
+DW Stadium,Wigan,59709
+Valley Parade,Bradford,56016
+MMArena,Le Mans,105810
+Edgbaston Cricket Ground,Birmingham,21967
+Wexford Park,Wexford,41046
+Dr. Hyde Park,Roscommon,18658
+Stadio Pino Zaccheria,Foggia,120203
+Stadion Rote Erde,Dortmund,20276
+Skatbank-Arena,Altenburg,82066
+CSK Stadium,Ryazan,115130
+Darlington Arena,Darlington,73476
+Ay-Yıldız Stadium,Karabük,109887
+New Hatay Stadium,Antakya,60514
+Stadion Georgi Asparuhov,Sofia,132946
+Stadion Hristo Botev,Vratsa,49724
